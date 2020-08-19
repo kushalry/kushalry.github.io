@@ -1,0 +1,24 @@
+<html>
+<style>
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+#animate-area {
+  width: 200px;
+  height: 200px;
+  background-image: url(https://i.pinimg.com/originals/76/47/9d/76479dd91dc55c2768ddccfc30a4fbf5.png);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  animation: animatedBackground 10s linear infinite alternate;
+}
+</style>
+<body>
+<div id="animate-area">
+</div>
+</body>
+</html>
