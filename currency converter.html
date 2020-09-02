@@ -1,0 +1,57 @@
+
+<script language="JavaScript">
+<!--
+function rupeeConverter(){
+document.converter.euro.value = document.converter.rupee.value * 0.012
+document.converter.dollar.value = document.converter.rupee.value * 0.014
+document.converter.pound.value = document.converter.rupee.value * 0.010
+document.converter.yen.value = document.converter.rupee.value * 1.45
+}
+function euroConverter(){
+document.converter.rupee.value = document.converter.euro.value * 86.67
+document.converter.dollar.value = document.converter.euro.value * 1.18
+document.converter.pound.value = document.converter.euro.value * 0.89
+document.converter.yen.value = document.converter.euro.value * 125.69
+}
+function dollarConverter(){
+document.converter.rupee.value = document.converter.dollar.value * 73.29
+document.converter.euro.value = document.converter.dollar.value * 0.85
+document.converter.pound.value = document.converter.dollar.value * 0.75
+document.converter.yen.value = document.converter.dollar.value * 106.29
+}
+function poundConverter(){
+document.converter.rupee.value = document.converter.pound.value * 97.62
+document.converter.dollar.value = document.converter.pound.value * 1.33
+document.converter.euro.value = document.converter.pound.value * 1.13
+document.converter.yen.value = document.converter.pound.value * 141.58
+}
+function yenConverter(){
+document.converter.rupee.value = document.converter.yen.value * 0.69
+document.converter.dollar.value = document.converter.yen.value * 0.0094
+document.converter.pound.value = document.converter.yen.value * 0.0071
+document.converter.euro.value = document.converter.yen.value * 0.0080
+}
+//-->
+</script>
+<form name="converter">
+<table border="0">
+<tr>
+<td>Rupee: </td><td><input type="text" name="rupee" onChange="rupeeConverter()" /></td>
+</tr>
+<tr>
+<td>Euro: </td><td><input type="text" name="euro" onChange="euroConverter()" /></td>
+</tr>
+<tr>
+<td>US Dollar: </td><td><input type="text" name="dollar" onChange="dollarConverter()" /></td>
+</tr>
+<tr>
+<td>British Pound:</td><td><input type="text" name="pound" onChange="poundConverter()" /></td>
+</tr>
+<tr>
+<td>Japanese Yen: </td><td><input type="text" name="yen" onChange="yenConverter()" /></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><input type="button" value="Convert!" /></td>
+</tr>
+</table>
+</form>
