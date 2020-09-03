@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title>Bus Ticket Booking</title>
+	<style type="text/css">
+		body{
+			font-family: Helvetica;
+			font-weight: bold;
+		}
+		#cont{
+			margin-top: 30vh;
+			background-color: #E4670B;
+			padding: 40px;
+		}
+	</style>
+</head>
+<body>
+	<div id="cont" align=center>
+		<form action="#">
+			<fieldset>
+			<br>
+			<legend>Bus Tickets</legend>
+			<label for="audit">Audit:</label>
+			<input name="audit" type="text" placeholder="Enter Quantity..." id="audit"/>
+			
+			<label for="sc">Serior Citizen:</label>
+			<input name="sc" type="text" placeholder="Enter Quantity..." id="sc"/>
+			
+			<label for="child">Child:</label>
+			<input name="child" type="text" placeholder="Enter Quantity..." id="child"/>
+			<br><br>
+			<button type="button" onclick="cal()">Calculate</button>
+			<br>
+			<br>
+			</fieldset>
+
+		</form>
+			
+			<p id="display"></p>
+	</div>
+
+	<script type="text/javascript">
+		function cal(){
+			console.log(document.forms)
+			const input = document.forms[0]
+			const val=input[1].value*50 + input[2].value*30 + input[3].value*20
+
+			document.getElementById("display").innerHTML=`Total Cost: ${val}`
+			
+		}
+
+		
+	</script> 
+</body>
+</html>
