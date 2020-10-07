@@ -1,0 +1,103 @@
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Forms</title>
+	<style>
+		body{
+			font-family: Helvetica;
+		}
+		label{
+			font-weight: bold;
+		}
+		.container{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;			
+		}
+		.form{
+			display: inline-block;
+		}
+		#submit{
+			width: 300px;
+			height: 30px;
+			border: none;
+			border-radius: 20px;
+			box-shadow: none;
+			text-decoration: none;
+			margin: none;
+			outline: none;
+		}
+		#submit:hover{
+			background-color: blue;
+		}
+		
+		#err{
+			display: none;
+			font-style: italic;
+			background-color: rgba(229, 26, 39, 0.4);
+			opacity: 0.9;
+			font-weight: bold;
+			padding: 10px;
+		}
+		#display{
+			display: none;
+			font-style: italic;
+			background-color: rgba(70, 164, 53, 0.6);
+			opacity: 0.9;
+			font-weight: bold;
+			padding: 10px;
+		}	
+	</style>
+</head>
+<body style="background-color:#3DCCCC;">
+
+
+	<h2 align=center> PARKING REGISTRATION</h2>
+
+	<div class="container">
+		<div align=center id="err">
+
+		</div><br>
+
+	<div class="form" >
+		
+		<form action="invoice.php" method="POST">
+			
+
+
+				<label for="male">Vehicle Type:</label>
+				<input type="radio" name="vtype" id="car" value="car"/>
+				<label for="male">Car</label>
+				<input type="radio" name="vtype" id="twowheeler" value="twowheeler"/>
+				<label for="female">Two Wheeler</label><br><br>
+				<br>
+
+				<label for="cid">Car Registration Number:</label><br>
+				<input type=text name="cid" id="cid"/><br><br>
+				<br>
+
+				<label for="indate">In-Date:</label>
+				<input type=text placeholder="dd-mm-yy" name="indate" id="indate"/>
+				
+
+				<label for="intime">In-time:</label>
+				<input type=text placeholder="hh:mm:ss" name="intime" id="intime"/><br><br>
+				<br>
+
+
+				<label for="outdate">Out-Date:</label>
+				<input type=text placeholder="dd-mm-yy" name="outdate" id="outdate"/>
+				
+
+				<label for="outtime">Out-time:</label>
+				<input type=text placeholder="hh:mm:ss" name="outtime" id="outtime"/><br><br>
+				<br>
+
+				<input type="submit" name="submit" id="submit" value="submit">
+		</form>
+
+	</div>
+</div>
+</body>
+</html>
