@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+ <!-- Obtain stylesheet. Note that the xml file & xsl file should be in the same directory/location -->
+ <?xml-stylesheet type="text/xsl" href="students.xsl" ?>
+ <student>
+        <info>
+         <regno>19BCE1669</regno>
+		 <name> Kushal Roy </name> 
+		 <branch> CSE</branch> 
+		 <yearofjoining>2019</yearofjoining> 
+         <emailid> kushal@gmail.com </emailid> 
+        </info>
+		<info>
+		 <regno>19BCE1101</regno>
+		 <name> Rahul Mathur </name> 
+         <branch> CSE</branch> 
+		 <yearofjoining>2018</yearofjoining> 
+		 <emailid> rahul@gmail.com </emailid> 
+		</info>
+		<info>
+		 <regno>19BCE1202</regno>
+		 <name> Sahil Malik </name> 
+		 <branch> ECE</branch> 
+		 <yearofjoining>2019</yearofjoining> 
+		 <emailid> sahil@gmail.com </emailid> 
+		</info>
+		<info>
+		 <regno>19BCE1303</regno>
+		 <name> Aryan Singh </name> 
+		 <branch> IT</branch> 
+		 <yearofjoining>2017</yearofjoining> 
+		 <emailid> aryan@gmail.com </emailid> 
+		</info>
+		<info>
+		 <regno>19BCE1404</regno>
+         <name> Mayank Agarwal </name> 
+		 <branch> BIO</branch> 
+		 <yearofjoining>2020</yearofjoining> 
+	     <emailid> mayank@gmail.com </emailid> 
+		</info>
+</student>
